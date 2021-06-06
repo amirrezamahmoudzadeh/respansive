@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="site3.css">
     <script src="https://kit.fontawesome.com/31cb5eb629.js" crossorigin="anonymous"></script>
     <link rel="icon" href="images/488b540e31f3d840df2930e0702208e8.jpg">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css">
 </head>
 <body>
     <div class="landing">
@@ -33,9 +34,9 @@
                 </div>
             </div>
             <div class="content">
-                <p>Welcome To Our Studio!</p>
-                <h1>IT'S NICE TO MEET YOU</h1>
-                <a href="" class="btn_landing">TELL ME MORE!</a>
+                <p data-aos="fade-left" data-aos-duration="300">Welcome To Our Studio!</p>
+                <h1 data-aos="fade-right" data-aos-duration="300">IT'S NICE TO MEET YOU</h1>
+                <a href="#" class="btn_landing" data-aos="zoom-in" data-aos-duration="300">TELL ME MORE!</a>
             </div>
         </div>
     </div>
@@ -44,19 +45,19 @@
             <h2>SERVICES</h2>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
             <section class="services">
-                <article class="sevice_post">
+                <article class="sevice_post" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                     <i class="fas fa-shopping-cart"></i>
                     <h3>E-Commerce</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                     </p>
                 </article>
-                <article class="sevice_post">
+                <article class="sevice_post" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
                     <i class="fas fa-laptop"></i>
                     <h3>Responsive Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                     </p>
                 </article>
-                <article class="sevice_post">
+                <article class="sevice_post" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
                     <i class="fas fa-lock"></i>
                     <h3>Web Security</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit
@@ -70,21 +71,21 @@
                  <h2>PORTFOLIO</h2>
                  <p>Lorem ipsum dolor sit amet consectetur.</p>
                  <section>
-                     <article class="post">
+                     <article class="post" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
                          <a href="#">
                              <img src="./images/post2.jpg" alt="">
                          </a>
                     <h3>Threads</h3>
                     <h4>Illustration</h4>
-                </article>
-                <article class="post">
+                     </article>
+                     <article class="post" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
                     <a href="#">
                         <img src="./images/post1.jpg" alt="">
                     </a>
                     <h3>Explore</h3>
                     <h4>Graphic Design</h4>
-                </article>
-                <article class="post">
+                     </article>
+                     <article class="post" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
                     <a href="#">
                         <img src="./images/post5.jpg" alt="">
                     </a>
@@ -159,19 +160,19 @@
             <h3>CONTACT US</h3>
             <p>Lorem ipsum dolor sit amet consectetur</p>
             <form action="">
-                <div class="fath">
-                    <div class="child1">
-                        <input type="text" placeholder="Your Name*">
-                        <input type="email" placeholder="Your Email*">
-                    </div>
-                    <div class="child2">
-                        <textarea rows="10" cols="50" name="texti" id="" cols="30" rows="10">YOUR MASSAGE</textarea>
-                    </div>
-                </div>
+                <input type="text" placeholder="Your Name*">
+                <input type="email" placeholder="Your Email*">
+                <textarea rows="10" cols="50" name="texti" id="" cols="30" rows="10">YOUR MESSAGE</textarea>
                 <input type="submit" value="SEND MASSAGE">
             </form>
         </div>
     </section>
     <script src="./script.js"></script>
+    <script src="./aos-master/dist/aos.js"></script>
+    <script>
+        new AOS.init({
+            once:true
+        });
+    </script>
 </body>
 </html>

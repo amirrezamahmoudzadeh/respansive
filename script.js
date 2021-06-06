@@ -11,3 +11,11 @@ function left(){
     line2.classList.toggle('trans2');
     line3.classList.toggle('trans3');
 }
+window.addEventListener('mouseup' , function(Event){
+    if(Event.target !=mainNav && Event.target.parentNode !=mainNav){
+        mainNav.classList.remove('right');
+        line1.classList.remove('trans1');
+        line2.classList.remove('trans2');
+        line3.classList.remove('trans3');
+    }
+});

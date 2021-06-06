@@ -345,9 +345,6 @@ a{
 .trans3{
     transform: rotate(45deg) translateY(4px)
 }
-@media (max-height:824) {
-    
-}
 @media (max-width:1100px){
     .main_nav .bar{
         display: flex;
@@ -361,7 +358,7 @@ a{
         height: 5px;
         width: 40px;
         background-color: #302e2f;
-        transition: all 0.6s ease-in-out;
+        transition: all 0.4s ease-in-out;
         transform-origin: right;
     }
     .main_nav ul{
@@ -379,7 +376,7 @@ a{
         height: 70vh;
         margin-top: 0;
         z-index: 9;
-        transition: all 0.3s ease;
+        transition: all 0.4s ease;
     }
     .main_nav ul li{
         font-size: 1em;
